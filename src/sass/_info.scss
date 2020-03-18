@@ -1,0 +1,45 @@
+.info {
+  background: url('../images/info.png') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-bottom: 50px;
+
+  &__container {
+    position: absolute;
+    max-width: 370px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  &__header {
+    color: #fff;
+    font-family: "Futura";
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__start {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: block;
+    background: url('../images/start.png');
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  
+  &__container {
+    width: 270px;
+  }
+
+  &__header {
+    font-size: 30px;
+  }
+}

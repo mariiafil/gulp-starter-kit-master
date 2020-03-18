@@ -1,0 +1,132 @@
+.rings {
+
+  text-align: center;
+  margin-bottom: 50px;
+
+  &__header {
+    font-family: "Florida-Medium";
+    font-size: 30px;
+    margin: 0 auto 30px;
+  }
+
+  &__description {
+    font-family: "Futura";
+    display: block;
+    margin: 0 auto 50px;
+    max-width: 700px;
+  }
+
+  &__button {
+    font-family: 'Futura';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    padding: 15px 40px;
+    border: 1px solid #000;
+  }
+
+  &__wrapper {
+    width: 100%;
+    position: relative;
+
+    :hover ~ .button {
+      color: #bdbcba;
+    }
+  }
+
+  &__slider {
+    list-style: none;
+    display: flex;
+    width: 720px;
+    overflow: hidden;
+    margin: 0 auto 100px;
+    padding: 0;
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  &__name {
+    font-family: 'Futura';
+    font-size: 14px;
+  }
+
+  &__buy {
+    font-family: 'Futura';
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bdbcba;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bdbcba;
+  }
+}
+
+.button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  color: transparent;
+  font-size: 50px;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #bdbcba;
+  }
+
+  &--prev {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 80px;
+  }
+
+  &--next {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 80px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .rings {
+
+    &__slider {
+      width: 540px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .rings {
+    
+    &__description {
+      max-width: 400px;
+    }
+
+    &__slider {
+      width: 340px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .rings {
+
+    &__header {
+      width: 250px;
+    }
+
+    &__description {
+      max-width: 300px;
+    }
+    
+    &__slider {
+      width: 150px;
+    }
+  }
+}

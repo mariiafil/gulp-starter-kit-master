@@ -1,0 +1,43 @@
+.header {
+  position: relative;
+  margin-bottom: 50px;
+  height: 100vh;
+  background: url('../images/header.png') no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(100% 9%, 100% 68%, 0 99%, 0 39%);
+  clip-path: polygon(100% 9%, 100% 68%, 0 99%, 0 39%);
+
+  &__text {
+    position: absolute;
+    width: 360px;
+    bottom: 70px;
+    left: 50px;
+    color: #fff;
+    font-family: 'Myriad Pro Regular';
+    font-size: 16px;
+    line-height: 130%;
+    text-transform: uppercase;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      background-color: #fff;
+      bottom: 130%;
+      left: 0; 
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .header {
+          
+    &__text {
+      bottom: 250px;
+      max-width: 250px;
+    }
+  }
+}
